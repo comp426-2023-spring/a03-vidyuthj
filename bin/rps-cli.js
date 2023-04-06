@@ -34,7 +34,7 @@ if(argv.h || argv.help) {
         console.log(JSON.stringify(rps(shot)));
     }
     catch (error) {
-        console.log(help)
+        console.log(help_result)
         console.log(`Rules for Rock Paper Scissors:
         - Scissors CUTS Paper
         - Paper COVERS Rock
