@@ -1,5 +1,6 @@
 #!/user/bin/env node
-import {rpsls} from "../lib/rpsls.js";
+
+import {rpsls_function} from "../lib/rpsls.js";
 import minimist from "minimist";
 
 const argv = minimist(process.argv.slice(2));
@@ -37,7 +38,7 @@ if(argv.r || argv.rules) {
 let shot = args._[0];
 
 try{
-    console.log(JSON.stringify(rpsls(shot)));
+    console.log(JSON.stringify(rpsls_function(shot)));
 }
 catch(error) {
     console.log(help_result);

@@ -1,6 +1,8 @@
 #!/user/bin/env node
-import {rps} from "../lib/rpsls.js";
+
 import minimist from "minimist";
+import { rps_function } from "../lib/rpsls.js";
+
 
 var argv = minimist(process.argv.slice(2));
 var help_result= `Usage: node-rps [SHOT]
@@ -24,22 +26,20 @@ if(argv.h || argv.help) {
             `Rules for Rock Paper Scissors:
             - Scissors CUTS Paper
             - Paper COVERS Rock
-            - Rock CRUSHES Scissors
-            ` 
+            - Rock CRUSHES Scissors` 
         );
         process.exit(0);
     }
-    let move = args._[0];
+    let shot = args._[0];
     try {
-        console.log(JSON.stringify(rps_function(move)));
+        console.log(JSON.stringify(rps_function(shot)));
     }
     catch (error) {
         console.log(help_result)
         console.log(`Rules for Rock Paper Scissors:
         - Scissors CUTS Paper
         - Paper COVERS Rock
-        - Rock CRUSHES Scissors
-        `)
+        - Rock CRUSHES Scissors`)
         process.exit(0);
     }
 
