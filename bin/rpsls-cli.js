@@ -38,7 +38,7 @@ if (args.rules || args.r) {
 let shot = args._[0];
 
 try {
-    console.log(JSON.stringify(rpsls(shot)));
+    console.log(JSON.stringify(rpsls_function(shot)));
     
 } catch (error){
     console.log(help_message);
