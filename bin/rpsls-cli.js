@@ -44,5 +44,5 @@ try{
 catch(error) {
     console.log(help_result);
     console.log(rules);
-    process.exit(0);
+    process.exit(1);
 }
