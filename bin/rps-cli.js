@@ -29,9 +29,9 @@ if(argv.h || argv.help) {
         );
         process.exit(0);
     }
-    let shot = args._[0];
+    let move = args._[0];
     try {
-        console.log(JSON.stringify(rps(shot)));
+        console.log(JSON.stringify(rps_function(move)));
     }
     catch (error) {
         console.log(help_result)
