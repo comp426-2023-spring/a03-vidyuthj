@@ -1,7 +1,7 @@
 {
   "name": "node-rpsls",
   "version": "1.0.0",
-  "description": "noderpsls",
+  "description": "A03",
   "main": "./lib/rpsls.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,14 +12,14 @@
   },
   "bin": {
     "node-rps": "./bin/rps-cli.js",
-    "node-rpsls": ".bin/rpsls-cli.js"
+    "node-rpsls": "./bin/rpsls-cli.js"
   },
   "author": "vidyuthj",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/comp426-2023-spring/a03-vidyuthj/issues"
   },
-  "homepage": "https://github.com/comp426-2023-spring/a03-vidyuthj#readme",
+  "homepage": "https://github.com/comp426-2023-spring/a03-ohsay22#readme",
   "dependencies": {
     "minimist": "^1.2.8"
   },
