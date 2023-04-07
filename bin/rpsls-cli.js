@@ -41,7 +41,7 @@ try {
     console.log(JSON.stringify(rpsls(shot)));
     
 } catch (error){
-    console.log(help);
+    console.log(help_message);
     console.log(rules);
     process.exit(1);
 }
